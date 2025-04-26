@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="flex flex-col justify-center items-center min-h-[90vh] bg-red-900 py-12" id="about">
       <h1 className="md:text-6xl font-bold text-4xl">ABOUT MYSELF</h1>
-      <div className="md:w-[60%] w-full px-12 md:px-0 my-10 text-red-200 text-lg text-justify">
+      <div className="md:w-[60%] w-full px-12 md:px-0 my-10 text-red-200 text-lg text-center">
         <p>
           I’m a passionate Software Engineer with over 2 years of experience
           building dynamic and high-performance web applications using the MERN
