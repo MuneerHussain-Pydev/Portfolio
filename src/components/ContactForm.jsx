@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-// import {nodemailer} from "nodemailer";
+import { IoSend } from "react-icons/io5";
 
 const ContactForm = () => {
   const name = useRef(null);
@@ -8,7 +8,6 @@ const ContactForm = () => {
   const subject = useRef(null);
   const message = useRef(null);
   const handleSubmit = async (e) => {
-
     const res = await fetch("/api/sendEmail", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -25,7 +24,7 @@ const ContactForm = () => {
     console.log(result);
   };
   return (
-    <form action={e=>handleSubmit(e)} className="w-full">
+    <form action={(e) => handleSubmit(e)} className="w-full">
       <div className="flex flex-col gap-4 w-full">
         <div className="sm:flex-row flex-col flex  gap-2 w-full">
           <input
@@ -53,8 +52,8 @@ const ContactForm = () => {
           className="p-2 rounded-md bg-[#020202] border border-gray-900 text-white resize-none"
           ref={message}
         ></textarea>
-        <button className="bg-red-600 text-white p-2 rounded-md hover:bg-red-700 transition">
-          Send Message
+        <button className="bg-red-600 text-white p-2 flex justify-center items-center gap-3 hover:cursor-pointer rounded-md hover:bg-red-700 transition">
+          Send Message <IoSend />
         </button>
       </div>
     </form>

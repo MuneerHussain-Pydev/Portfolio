@@ -8,25 +8,27 @@ const Projects = () => {
       name: "Training Management System",
       description: "A web-based platform designed to streamline employee training processes. It allows administrators to schedule and manage training sessions, track employee attendance, and collect structured feedback after each session to measure effectiveness and improve future trainings.",
       image: "/TMSImages/tmsHome.png",
-      link: "/project1",
+      link: `/projects/1`,
     },
     {
       id: 2,
       name: "ExoPlanetarium",
       description: "An interactive learning platform focused on the fascinating world of exoplanets. It features engaging space-themed blogs, a quiz module to test your knowledge, and an AI-powered chatbot that answers your astronomy questions in real-time — making space exploration both fun and educational.",
       image: "/ExoImages/exoHome.png",
-      link: "/project2",
+      link: "/projects/2",
     },
     {
     id: 3,
     name: "MovieVerse",
     description: "A movie discovery platform that allows users to explore films across various genres, search for specific titles, and build a personalized WatchList. With a clean and intuitive interface, MovieVerse offers an enjoyable and organized way to keep track of your favorite movies.",    
     image: "/MovieImages/movieHome.png",
+    link: "/projects/3",
     },{
         id: 4,
         name: "Recipe Rescuer",
         description: "A recipe management application that helps users organize their favorite recipes, create shopping lists, and plan meals for the week. With a user-friendly interface, Recipe Rescuer makes cooking more enjoyable and less stressful.",
         image: "/RecipeImages/recipeHome.png",
+        link: "/projects/4",
     }
   ];
   return (

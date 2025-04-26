@@ -14,10 +14,10 @@ const Home = () => {
             <button className="flex items-center gap-2 bg-red-700 text-white py-3 px-6 rounded-md hover:bg-red-600 transition hover:cursor-pointer ease-in-out">
                 BOOK A CALL <FaArrowRight/>
             </button>
-            <button className="flex items-center gap-2 border border-red-600 bg-transparent text-red-600 py-3 px-6 rounded-md hover:bg-red-700 hover:text-white transition hover:cursor-pointer ease-in-out">
+            <a href="https://www.linkedin.com/in/muneer-hussain123/" target="_blank" className="flex items-center gap-2 border border-red-600 bg-transparent text-red-600 py-3 px-6 rounded-md hover:bg-red-700 hover:text-white transition hover:cursor-pointer ease-in-out">
                 My Linkedein 
                 <FaLinkedinIn  size={20}/>
-            </button>
+            </a>
         </div>
       </div>
       <div className="flex justify-center items-center md:w-1/2">
