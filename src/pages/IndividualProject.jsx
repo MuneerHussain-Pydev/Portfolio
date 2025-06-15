@@ -71,23 +71,23 @@ const IndividualProject = ({ projectID }) => {
     },
     {
       projectID: 4,
-      title: "Recipe Rescuer",
+      title: "GemVault",
       description:
-        "A recipe management application that helps users organize their favorite recipes, create shopping lists, and plan meals for the week. With a user-friendly interface, Recipe Rescuer makes cooking more enjoyable and less stressful.",
-      collaborators: "Self-Project",
+        "GemVault is a blockchain-based C2C marketplace for trading certified gemstones. It ensures secure and transparent transactions by verifying sellers through government-issued certificates and tracking ownership on-chain. Each gemstone is uniquely identified, preventing duplicate or unauthorized listings and enabling trustworthy peer-to-peer trading.",
+      collaborators: "Hashir Jamal, Shayan Zaheer, Arham Hasan",
       techStack: {
-        frontend: ["ReactJS", "TailwindCSS"],
-        backend: ["Spoonacular API"],
-        database: ["MongoDB"],
+        frontend: ["NextJS", "TailwindCSS"],
+        backend: ["NodeJS", "ExpressJS", "Solidity"],
+        database: ["PostgreSQL"],
       },
       gallery: [
-        "/RecipeImages/recipe1.png",
-        "/RecipeImages/recipe2.png",
-        "/RecipeImages/recipe3.png",
-        "/RecipeImages/recipe4.png",
+        "/GemImages/gem1.png",
+        "/GemImages/gem2.png",
+        "/GemImages/gem3.png",
+        "/GemImages/gem4.png",
       ],
-      homeImage: "/RecipeImages/recipeHome.png",
-      completion: "September 2024",
+      homeImage: "/GemImages/gemHome.png",
+      completion: "May 2025",
       link: "",
     },
   ];
@@ -99,10 +99,6 @@ const IndividualProject = ({ projectID }) => {
       {!currentProject ? (
       <h1 className="text-4xl md:text-5xl font-bold py-4 flex justify-center items-center mt-6">
         Project not found.
-      </h1>
-    ) : projectID == 4 ? (
-      <h1 className="text-4xl md:text-5xl font-bold py-4 flex justify-center items-center mt-6">
-        The Project is under development
       </h1>
     ) :(
         <>

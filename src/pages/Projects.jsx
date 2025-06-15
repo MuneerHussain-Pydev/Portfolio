@@ -6,30 +6,35 @@ const Projects = () => {
     {
       id: 1,
       name: "Training Management System",
-      description: "A web-based platform designed to streamline employee training processes. It allows administrators to schedule and manage training sessions, track employee attendance, and collect structured feedback after each session to measure effectiveness and improve future trainings.",
+      description:
+        "A web-based platform designed to streamline employee training processes. It allows administrators to schedule and manage training sessions, track employee attendance, and collect structured feedback after each session to measure effectiveness and improve future trainings.",
       image: "/TMSImages/tmsHome.png",
       link: `/projects/1`,
     },
     {
       id: 2,
       name: "ExoPlanetarium",
-      description: "An interactive learning platform focused on the fascinating world of exoplanets. It features engaging space-themed blogs, a quiz module to test your knowledge, and an AI-powered chatbot that answers your astronomy questions in real-time — making space exploration both fun and educational.",
+      description:
+        "An interactive learning platform focused on the fascinating world of exoplanets. It features engaging space-themed blogs, a quiz module to test your knowledge, and an AI-powered chatbot that answers your astronomy questions in real-time — making space exploration both fun and educational.",
       image: "/ExoImages/exoHome.png",
       link: "/projects/2",
     },
     {
-    id: 3,
-    name: "MovieVerse",
-    description: "A movie discovery platform that allows users to explore films across various genres, search for specific titles, and build a personalized WatchList. With a clean and intuitive interface, MovieVerse offers an enjoyable and organized way to keep track of your favorite movies.",    
-    image: "/MovieImages/movieHome.png",
-    link: "/projects/3",
-    },{
-        id: 4,
-        name: "Recipe Rescuer",
-        description: "A recipe management application that helps users organize their favorite recipes, create shopping lists, and plan meals for the week. With a user-friendly interface, Recipe Rescuer makes cooking more enjoyable and less stressful.",
-        image: "/RecipeImages/recipeHome.png",
-        link: "/projects/4",
-    }
+      id: 3,
+      name: "MovieVerse",
+      description:
+        "A movie discovery platform that allows users to explore films across various genres, search for specific titles, and build a personalized WatchList. With a clean and intuitive interface, MovieVerse offers an enjoyable and organized way to keep track of your favorite movies.",
+      image: "/MovieImages/movieHome.png",
+      link: "/projects/3",
+    },
+    {
+      id: 4,
+      name: "GemVault",
+      description:
+        "GemVault is a blockchain-based C2C marketplace for trading certified gemstones. It ensures secure and transparent transactions by verifying sellers through government-issued certificates and tracking ownership on-chain. Each gemstone is uniquely identified, preventing duplicate or unauthorized listings and enabling trustworthy peer-to-peer trading.",
+      image: "/GemImages/gemHome.png",
+      link: "/projects/4",
+    },
   ];
   return (
     <div
@@ -37,7 +42,10 @@ const Projects = () => {
       id="projects"
     >
       <h1 className="text-4xl md:text-6xl font-bold">WHAT I'VE BUILT</h1>
-      <p className="text-red-200 mt-6 text-lg">Explore a collection of my recent projects, blending functionality with clean design.</p>
+      <p className="text-red-200 mt-6 text-lg">
+        Explore a collection of my recent projects, blending functionality with
+        clean design.
+      </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-16 mt-12">
         {projects.map((project, index) => (
           <ProjectCard
