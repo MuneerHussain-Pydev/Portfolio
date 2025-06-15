@@ -86,7 +86,7 @@ const IndividualProject = ({ projectID }) => {
         "/GemImages/gem3.png",
         "/GemImages/gem4.png",
       ],
-      homeImage: "/GemImages/gemHome.png",
+      homeImage: "/GemImages/gemhome.png",
       completion: "May 2025",
       link: "",
     },

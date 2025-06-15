@@ -32,7 +32,7 @@ const Projects = () => {
       name: "GemVault",
       description:
         "GemVault is a blockchain-based C2C marketplace for trading certified gemstones. It ensures secure and transparent transactions by verifying sellers through government-issued certificates and tracking ownership on-chain. Each gemstone is uniquely identified, preventing duplicate or unauthorized listings and enabling trustworthy peer-to-peer trading.",
-      image: "/GemImages/gemHome.png",
+      image: "/GemImages/gemhome.png",
       link: "/projects/4",
     },
   ];
